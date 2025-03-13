@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control RC Car</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Control the RC Car</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/live_feed">Live Feed</a>
+            <a href="/control">Control</a>
+        </nav>
+        <div class="controls">
+            <button onclick="sendCommand('forward')">Forward</button>
+            <button onclick="sendCommand('left')">Left</button>
+            <button onclick="sendCommand('right')">Right</button>
+            <button onclick="sendCommand('backward')">Backward</button>
+            <button onclick="sendCommand('stop')">Stop</button>
+        </div>
+        <h2>Vehicle Location</h2>
+        <div id="map"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
