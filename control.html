@@ -10,9 +10,9 @@
     <div class="container">
         <h1>Control the RC Car</h1>
         <nav>
-            <a href="/">Home</a>
-            <a href="/live_feed">Live Feed</a>
-            <a href="/control">Control</a>
+            <a href="index.html">Home</a>
+            <a href="live_feed.html">Live Feed</a>
+            <a href="control.html">Control</a>
         </nav>
         <div class="controls">
             <button onclick="sendCommand('forward')">Forward</button>
@@ -24,6 +24,6 @@
         <h2>Vehicle Location</h2>
         <div id="map"></div>
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="script.js"></script>
 </body>
 </html>
